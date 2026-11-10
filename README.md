@@ -6,7 +6,7 @@ This repository is the supplementary material (Online Resource 1) of:
 
 > Zournatzis I., Tsitzira K., Geladaris A., Chatziathanasiou G., Chachamis E., Polygerinos P. *Towards a Parametrized Fabrication Framework for Fabric Soft Pneumatic Actuators.* Intelligent Service Robotics (submitted).
 
-Dataset DOI: `10.5281/zenodo.XXXXXXX` (see `CITATION.cff`)
+Dataset DOI: [10.5281/zenodo.24117859](https://doi.org/10.5281/zenodo.24117859) (see `CITATION.cff`)
 
 ---
 
