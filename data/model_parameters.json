@@ -1,0 +1,223 @@
+{
+  "description": "Model parameters of the parametrized fabrication framework for heat-sealed textile soft pneumatic actuators (tSPAs).",
+  "units": {
+    "temperature": "degC",
+    "pressure_process": "MPa",
+    "pressure_burst": "kPa",
+    "time": "s",
+    "length": "mm",
+    "line_load": "N/mm"
+  },
+  "coding": {
+    "x_T": "(T_s - 160)/15",
+    "x_P": "(P_c - 1.25)/0.75",
+    "x_t": "(t_s - 90)/30",
+    "l": "log2(lambda_m / 420 D)",
+    "valid_ranges": {
+      "T_s": [
+        145,
+        175
+      ],
+      "P_c": [
+        0.5,
+        2.0
+      ],
+      "t_s": [
+        60,
+        120
+      ],
+      "lambda_m_D": [
+        210,
+        840
+      ]
+    }
+  },
+  "peel_response_surface_models": {
+    "Sp": {
+      "response": "peel resistance S_p [N/mm]",
+      "coef": {
+        "Intercept": 5.0039,
+        "lD": 0.7257,
+        "xT": 0.6554,
+        "lD:xT": -0.5439,
+        "I(xT ** 2)": -0.581
+      },
+      "p": {
+        "Intercept": 0.0,
+        "lD": 0.0,
+        "xT": 0.0005,
+        "lD:xT": 0.0155,
+        "I(xT ** 2)": 0.0256
+      },
+      "R2": 0.564,
+      "R2_adj": 0.519,
+      "rmse": 0.8282,
+      "n": 44
+    },
+    "ln_CV": {
+      "response": "natural log of within-strip coefficient of variation",
+      "coef": {
+        "Intercept": -1.5057,
+        "lD": -0.2445,
+        "xT": -0.2925,
+        "xP": -0.1617,
+        "xt": -0.035,
+        "lD:xT": 0.4112,
+        "lD:xt": 0.1269,
+        "I(xT ** 2)": 0.1814,
+        "I(xP ** 2)": 0.179,
+        "xT:xP": -0.2048,
+        "lD:I(xT ** 2)": -0.3922
+      },
+      "p": {
+        "Intercept": 0.0,
+        "lD": 0.0043,
+        "xT": 0.0001,
+        "xP": 0.0147,
+        "xt": 0.5694,
+        "lD:xT": 0.0,
+        "lD:xt": 0.0982,
+        "I(xT ** 2)": 0.0542,
+        "I(xP ** 2)": 0.0573,
+        "xT:xP": 0.032,
+        "lD:I(xT ** 2)": 0.0013
+      },
+      "R2": 0.826,
+      "R2_adj": 0.774,
+      "rmse": 0.2982,
+      "n": 44
+    },
+    "eta": {
+      "response": "bond efficiency S_p/(sigma_UTS,warp * h); fabric categorical (reference level B840 = Blue 840D; L420 = Light Blue 420D; R210 = Red 210D)",
+      "coef": {
+        "Intercept": 0.1613,
+        "C(F)[T.L420]": 0.0149,
+        "C(F)[T.R210]": -0.0296,
+        "xT": -0.0026,
+        "C(F)[T.L420]:xT": 0.0409,
+        "C(F)[T.R210]:xT": 0.0261,
+        "xP": 0.0033,
+        "xt": 0.0075,
+        "I(xT ** 2)": -0.0096,
+        "C(F)[T.L420]:I(xT ** 2)": 0.0009,
+        "C(F)[T.R210]:I(xT ** 2)": -0.026,
+        "I(xP ** 2)": -0.0083,
+        "I(xt ** 2)": -0.0067
+      },
+      "p": {
+        "Intercept": 0.0,
+        "C(F)[T.L420]": 0.2534,
+        "C(F)[T.R210]": 0.0272,
+        "xT": 0.7578,
+        "C(F)[T.L420]:xT": 0.0018,
+        "C(F)[T.R210]:xT": 0.0454,
+        "xP": 0.5166,
+        "xt": 0.1367,
+        "I(xT ** 2)": 0.4439,
+        "C(F)[T.L420]:I(xT ** 2)": 0.9605,
+        "C(F)[T.R210]:I(xT ** 2)": 0.1558,
+        "I(xP ** 2)": 0.2648,
+        "I(xt ** 2)": 0.3687
+      },
+      "R2": 0.741,
+      "R2_adj": 0.641,
+      "rmse": 0.0239,
+      "n": 44
+    }
+  },
+  "process_windows_t110s": {
+    "criterion": "S_p >= 90% of fabric maximum and CV <= 0.3, at t_s = 110 s",
+    "Blue 840D": {
+      "T_min_C": 147,
+      "P_min_MPa": 0.5,
+      "optimum": {
+        "T_C": 157,
+        "P_MPa": 1.4
+      }
+    },
+    "Light Blue 420D": {
+      "T_min_C": 154,
+      "P_min_MPa": "0.5-0.65 (depends on T)",
+      "optimum": {
+        "T_C": 175,
+        "P_MPa": 1.6
+      }
+    },
+    "Red 210D": {
+      "T_min_C": 162,
+      "P_min_MPa": "0.6-0.75 (depends on T)",
+      "optimum": {
+        "T_C": 166,
+        "P_MPa": 1.5
+      }
+    },
+    "common_window": {
+      "T_C": [
+        162,
+        175
+      ],
+      "P_min_MPa": 0.6,
+      "t_s": 110
+    },
+    "interpolation_law": {
+      "T_min_C": "154 - 7.6*l",
+      "T_max_C": 175,
+      "P_min_MPa": "0.6 if lambda_m <= 300 D else 0.5",
+      "validity": "double-sided TPU-coated nylon, 210-840 D"
+    }
+  },
+  "structural_capacity_model": {
+    "equation": "P_f = 4 * N_crit * phi_w(w) / (k_s * D_inc);  phi_w(w) = (1 - exp(-k w)) / (1 - exp(-4 k))",
+    "N_crit_N_per_mm": {
+      "Navy Blue 70D (single-sided)": 5.52,
+      "Red Lipstick 210D": 5.45,
+      "Light Blue 420D": 7.63,
+      "Blue 840D (lower bound, fitting failures)": 10.38
+    },
+    "N_crit_se": [
+      0.36,
+      0.36,
+      0.15,
+      0.36
+    ],
+    "N_crit_interpolation_law": {
+      "equation": "7.6 * (lambda_m/420)^0.46",
+      "validity": "double-sided TPU-coated nylon, 210-840 D"
+    },
+    "k_per_mm": 1.051,
+    "k_se": 0.23,
+    "w_crit_mm": 2.85,
+    "k_s": {
+      "square": 1.0,
+      "elongated (aspect ratio >= 2)": 1.193,
+      "se": 0.054
+    },
+    "spot_weld_line_load_N_per_mm": 2.0,
+    "calibration": {
+      "n": 33,
+      "R2": 0.838,
+      "mean_abs_error_pct": 7.1
+    },
+    "validation": {
+      "specimens": "Exp 3.4 ungridded, D_inc = 100 mm",
+      "predicted_kPa": 305.0,
+      "measured_kPa": 312.1,
+      "sd_kPa": 9.0
+    },
+    "validity": {
+      "lambda_m_D": [
+        70,
+        840
+      ],
+      "w_mm": [
+        2,
+        8
+      ],
+      "D_inc_mm": [
+        60,
+        100
+      ],
+      "process": "press sealing within the process window"
+    }
+  }
+}

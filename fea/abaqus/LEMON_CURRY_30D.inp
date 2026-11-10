@@ -1,0 +1,13 @@
+** Abaqus material card - Lemon Curry 30D
+** Source: tspa-fabric-materials (Zournatzis et al.), uniaxial tests ISO 527-1/-3, n=3 per direction (n=2 for Lemon Curry 30D bias)
+** Units: MPa, mm (consistent N-mm-s system)
+** Orthotropic in-plane (membrane/shell) model; direction 1 = warp, 2 = weft
+** E1 = 423.6 MPa (warp, measured), E2 = 248.1 MPa (weft), E45 = 73.8 MPa (bias, measured)
+** nu12 = 0.3 (ASSUMED, not measured)
+** G12 derived from the bias modulus: 1/G12 = 4/E45 - 1/E1 - 1/E2 + 2*nu12/E1  (depends on assumed nu12)
+** G13 = G23 = G12 (ASSUMED; transverse shear irrelevant for membrane models)
+** Linear-elastic response observed up to near failure. Strength (MPa): warp 50.0, weft 32.7, bias 49.9
+** Nominal thickness: not measured
+*MATERIAL, NAME=LEMON_CURRY_30D
+*ELASTIC, TYPE=LAMINA
+423.6, 248.1, 0.3, 20.3, 20.3, 20.3

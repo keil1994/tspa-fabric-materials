@@ -1,0 +1,13 @@
+** Abaqus material card - Navy Blue 70D
+** Source: tspa-fabric-materials (Zournatzis et al.), uniaxial tests ISO 527-1/-3, n=3 per direction
+** Units: MPa, mm (consistent N-mm-s system)
+** Orthotropic in-plane (membrane/shell) model; direction 1 = warp, 2 = weft
+** E1 = 529.1 MPa (warp, measured), E2 = 223.1 MPa (weft), E45 = 84.7 MPa (bias, measured)
+** nu12 = 0.3 (ASSUMED, not measured)
+** G12 derived from the bias modulus: 1/G12 = 4/E45 - 1/E1 - 1/E2 + 2*nu12/E1  (depends on assumed nu12)
+** G13 = G23 = G12 (ASSUMED; transverse shear irrelevant for membrane models)
+** Linear-elastic response observed up to near failure. Strength (MPa): warp 67.0, weft 47.8, bias 64.0
+** Nominal thickness: 0.190 mm
+*MATERIAL, NAME=NAVY_BLUE_70D
+*ELASTIC, TYPE=LAMINA
+529.1, 223.1, 0.3, 23.8, 23.8, 23.8

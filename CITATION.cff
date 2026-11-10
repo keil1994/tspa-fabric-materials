@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this dataset or tool, please cite both the dataset and the associated article."
+title: "tSPA fabric materials: material properties, fabrication windows and design models for heat-sealed textile soft pneumatic actuators"
+type: dataset
+version: 1.0.0
+date-released: 2026-11-20
+doi: 10.5281/zenodo.XXXXXXX
+license: CC-BY-4.0
+authors:
+  - family-names: Zournatzis
+    given-names: Ilias
+    affiliation: "Hellenic Mediterranean University; Bendabl PC"
+  - family-names: Tsitzira
+    given-names: Konstantina
+    affiliation: "Hellenic Mediterranean University"
+  - family-names: Geladaris
+    given-names: Aristeidis
+    affiliation: "Hellenic Mediterranean University; University of West Attica"
+  - family-names: Chatziathanasiou
+    given-names: Grigoris
+    affiliation: "Hellenic Mediterranean University"
+  - family-names: Chachamis
+    given-names: Efstathios
+    affiliation: "University of West Attica; Bendabl PC"
+  - family-names: Polygerinos
+    given-names: Panagiotis
+    affiliation: "University of West Attica"
+keywords: [textile robotics, soft pneumatic actuators, heat sealing, TPU-coated fabric, material properties, FEA]
+preferred-citation:
+  type: article
+  title: "Towards a Parametrized Fabrication Framework for Fabric Soft Pneumatic Actuators"
+  authors:
+    - family-names: Zournatzis
+      given-names: Ilias
+    - family-names: Tsitzira
+      given-names: Konstantina
+    - family-names: Geladaris
+      given-names: Aristeidis
+    - family-names: Chatziathanasiou
+      given-names: Grigoris
+    - family-names: Chachamis
+      given-names: Efstathios
+    - family-names: Polygerinos
+      given-names: Panagiotis
+  journal: "Intelligent Service Robotics"
+  year: 2027
+  status: submitted

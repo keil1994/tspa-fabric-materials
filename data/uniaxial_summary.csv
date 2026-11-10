@@ -1,0 +1,40 @@
+fabric,denier,direction,E_MPa_mean,E_MPa_sd,UTS_MPa_mean,UTS_MPa_sd,strain_at_UTS_pct_mean,strain_at_UTS_pct_sd,n_specimens,source
+Lemon Curry 30D,30,warp,423.58,53.23,50.0,1.0,16.35,1.82,3,measured
+Lemon Curry 30D,30,weft,248.13,7.12,32.66,3.88,17.24,2.5,3,measured
+Lemon Curry 30D,30,bias,73.75,1.54,49.91,6.03,55.08,4.99,2,measured
+Olive green 40D,40,warp,569.31,11.67,57.94,2.26,27.26,1.49,3,measured
+Olive green 40D,40,weft,195.46,9.38,35.52,1.07,32.99,1.39,3,measured
+Olive green 40D,40,bias,116.1,15.1,51.75,0.98,61.61,15.82,3,measured
+Orange 40D,40,warp,170.46,1.61,31.02,3.42,25.6,3.75,3,measured
+Orange 40D,40,weft,538.25,6.87,46.94,1.37,22.38,1.55,3,measured
+Orange 40D,40,bias,99.64,6.81,48.38,4.31,56.16,4.69,3,measured
+Navy Blue 70D,70,warp,529.14,14.04,67.0,1.11,30.57,0.29,3,measured
+Navy Blue 70D,70,weft,223.14,4.79,47.79,3.75,32.63,4.44,3,measured
+Navy Blue 70D,70,bias,84.65,9.77,63.99,3.05,71.54,4.05,3,measured
+Red Lipstick 210D,210,warp,456.92,13.21,105.41,0.7,27.61,0.21,3,measured
+Red Lipstick 210D,210,weft,233.66,12.49,70.59,0.89,29.35,0.64,3,measured
+Red Lipstick 210D,210,bias,147.82,15.13,98.19,1.58,68.03,0.54,3,measured
+Yellow 210D,210,warp,203.44,7.89,51.05,1.0,31.2,1.49,3,measured
+Yellow 210D,210,weft,104.0,7.1,36.4,1.4,33.2,1.6,0,estimated (no valid test data)
+Yellow 210D,210,bias,75.8,12.36,77.64,1.88,83.43,4.54,3,measured
+Grey 300D,300,warp,520.29,3.58,55.93,0.38,21.35,0.57,3,measured
+Grey 300D,300,weft,464.89,24.72,51.39,0.79,18.94,0.08,3,measured
+Grey 300D,300,bias,119.68,4.84,51.72,1.69,57.17,2.18,3,measured
+Black 330D,330,warp,323.39,27.05,124.17,8.33,33.57,3.06,3,measured
+Black 330D,330,weft,255.95,22.66,64.97,2.48,26.97,0.81,3,measured
+Black 330D,330,bias,47.79,7.12,58.13,0.37,71.89,0.58,3,measured
+Light Blue 420D,420,warp,518.52,4.41,60.86,0.64,50.15,1.27,3,measured
+Light Blue 420D,420,weft,190.8,0.83,36.19,1.27,61.09,2.62,3,measured
+Light Blue 420D,420,bias,157.13,4.69,46.81,0.23,110.15,1.96,3,measured
+Lemon green 500D,500,warp,226.83,27.27,96.94,3.88,39.26,2.34,3,measured
+Lemon green 500D,500,weft,200.54,5.39,69.72,1.49,33.1,0.73,3,measured
+Lemon green 500D,500,bias,72.4,9.0,43.3,0.52,63.48,1.77,3,measured
+Light Brown 600D,600,warp,708.94,4.38,81.01,1.38,31.11,1.29,3,measured
+Light Brown 600D,600,weft,362.5,7.1,57.8,1.4,33.1,1.6,0,estimated (no valid test data)
+Light Brown 600D,600,bias,136.31,6.42,41.77,0.15,61.05,0.92,3,measured
+Black 840D,840,warp,567.44,7.44,60.6,0.88,46.75,1.66,3,measured
+Black 840D,840,weft,214.2,1.87,50.86,0.92,56.02,2.78,3,measured
+Black 840D,840,bias,145.08,6.38,41.87,0.54,76.59,0.2,3,measured
+Blue 840D,840,warp,361.4,6.99,58.25,2.93,45.71,3.05,3,measured
+Blue 840D,840,weft,183.26,9.4,52.45,4.13,51.5,5.33,3,measured
+Blue 840D,840,bias,116.67,2.41,60.88,0.35,119.81,0.66,3,measured
